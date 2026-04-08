@@ -1,6 +1,6 @@
 import type { AppData, Correlation, Insight, DayScore, WeeklyReport, Alert } from '@/types';
-import { mean, median, stdDev, last7Days, lastNDays, format, subDays } from './helpers';
-import { format as fnsFormat, subWeeks, startOfWeek, endOfWeek, parseISO } from 'date-fns';
+import { mean, median } from './helpers';
+import { format as fnsFormat, subWeeks, startOfWeek, endOfWeek } from 'date-fns';
 
 // ============== METRIC EXTRACTION ==============
 interface DailyMetrics {
